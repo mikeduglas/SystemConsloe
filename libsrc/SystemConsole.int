@@ -1,0 +1,89 @@
+!Generated .INC file (by the EasyCOM2INC v 2.14)
+!IDL filename: SystemConsole.idl
+
+!*********** Interfaces ***********
+!IDispatch
+!ISystemConsole
+!IUnknown
+!*********** End of Interfaces ***********
+
+!*********** Data types ***********
+_ConsoleKeyInfoGrp              GROUP,TYPE
+Key                               long
+KeyChar                           USHORT
+Modifiers                         long
+                                END
+!*********** End of Data types ***********
+
+
+!*********** interfaces ***********
+IID_ISystemConsole              GROUP
+data1                             LONG(14B443AAH)
+data2                             SHORT(0E163H)
+data3                             SHORT(4DF5H)
+data4                             STRING('<94H><24H><5FH><83H><2H><6H><18H><0BDH>')
+                                END
+ISystemConsole                  INTERFACE(IDispatch),COM,TYPE
+Open                              PROCEDURE(),HRESULT,RAW,PROC
+Close                             PROCEDURE(),HRESULT,RAW,PROC
+GetBackgroundColor                PROCEDURE(*long pRetVal),HRESULT,RAW,PROC
+SetBackgroundColor                PROCEDURE(long pRetVal),HRESULT,RAW,PROC
+GetForegroundColor                PROCEDURE(*long pRetVal),HRESULT,RAW,PROC
+SetForegroundColor                PROCEDURE(long pRetVal),HRESULT,RAW,PROC
+GetBufferHeight                   PROCEDURE(*long pRetVal),HRESULT,RAW,PROC
+SetBufferHeight                   PROCEDURE(long pRetVal),HRESULT,RAW,PROC
+GetBufferWidth                    PROCEDURE(*long pRetVal),HRESULT,RAW,PROC
+SetBufferWidth                    PROCEDURE(long pRetVal),HRESULT,RAW,PROC
+NumberLock                        PROCEDURE(*VARIANT_BOOL pRetVal),HRESULT,RAW,PROC
+CapsLock                          PROCEDURE(*VARIANT_BOOL pRetVal),HRESULT,RAW,PROC
+GetCursorLeft                     PROCEDURE(*long pRetVal),HRESULT,RAW,PROC
+SetCursorLeft                     PROCEDURE(long pRetVal),HRESULT,RAW,PROC
+GetCursorTop                      PROCEDURE(*long pRetVal),HRESULT,RAW,PROC
+SetCursorTop                      PROCEDURE(long pRetVal),HRESULT,RAW,PROC
+GetCursorSize                     PROCEDURE(*long pRetVal),HRESULT,RAW,PROC
+SetCursorSize                     PROCEDURE(long pRetVal),HRESULT,RAW,PROC
+GetCursorVisible                  PROCEDURE(*VARIANT_BOOL pRetVal),HRESULT,RAW,PROC
+SetCursorVisible                  PROCEDURE(VARIANT_BOOL pRetVal),HRESULT,RAW,PROC
+GetInputEncoding                  PROCEDURE(*BSTRING pRetVal),HRESULT,RAW,PROC
+SetInputEncoding                  PROCEDURE(BSTRING pRetVal),HRESULT,RAW,PROC
+GetOutputEncoding                 PROCEDURE(*BSTRING pRetVal),HRESULT,RAW,PROC
+SetOutputEncoding                 PROCEDURE(BSTRING pRetVal),HRESULT,RAW,PROC
+KeyAvailable                      PROCEDURE(*VARIANT_BOOL pRetVal),HRESULT,RAW,PROC
+LargestWindowHeight               PROCEDURE(*long pRetVal),HRESULT,RAW,PROC
+LargestWindowWidth                PROCEDURE(*long pRetVal),HRESULT,RAW,PROC
+GetTitle                          PROCEDURE(*BSTRING pRetVal),HRESULT,RAW,PROC
+SetTitle                          PROCEDURE(BSTRING pRetVal),HRESULT,RAW,PROC
+GetTreatControlCAsInput           PROCEDURE(*VARIANT_BOOL pRetVal),HRESULT,RAW,PROC
+SetTreatControlCAsInput           PROCEDURE(VARIANT_BOOL pRetVal),HRESULT,RAW,PROC
+GetWindowLeft                     PROCEDURE(*long pRetVal),HRESULT,RAW,PROC
+SetWindowLeft                     PROCEDURE(long pRetVal),HRESULT,RAW,PROC
+GetWindowTop                      PROCEDURE(*long pRetVal),HRESULT,RAW,PROC
+SetWindowTop                      PROCEDURE(long pRetVal),HRESULT,RAW,PROC
+GetWindowHeight                   PROCEDURE(*long pRetVal),HRESULT,RAW,PROC
+SetWindowHeight                   PROCEDURE(long pRetVal),HRESULT,RAW,PROC
+GetWindowWidth                    PROCEDURE(*long pRetVal),HRESULT,RAW,PROC
+SetWindowWidth                    PROCEDURE(long pRetVal),HRESULT,RAW,PROC
+Beep                              PROCEDURE(long frequency,long duration),HRESULT,RAW,PROC
+CLEAR_COM                         PROCEDURE(),HRESULT,RAW,PROC
+MoveBufferArea                    PROCEDURE(long sourceLeft,long sourceTop,long sourceWidth,long sourceHeight,long targetLeft,long targetTop,USHORT sourceChar,long sourceForeColor,|
+                                            long sourceBackColor),HRESULT,RAW,PROC
+Read                              PROCEDURE(*long pRetVal),HRESULT,RAW,PROC
+ReadKey                           PROCEDURE(VARIANT_BOOL intercept,*_ConsoleKeyInfoGrp keyinfo),HRESULT,RAW,PROC
+ReadLine                          PROCEDURE(*BSTRING pRetVal),HRESULT,RAW,PROC
+ResetColor                        PROCEDURE(),HRESULT,RAW,PROC
+SetBufferSize                     PROCEDURE(long width,long height),HRESULT,RAW,PROC
+SetCursorPosition                 PROCEDURE(long left,long top),HRESULT,RAW,PROC
+SetWindowPosition                 PROCEDURE(long left,long top),HRESULT,RAW,PROC
+SetWindowSize                     PROCEDURE(long width,long height),HRESULT,RAW,PROC
+Write                             PROCEDURE(BSTRING value),HRESULT,RAW,PROC
+WriteLine                         PROCEDURE(BSTRING value),HRESULT,RAW,PROC
+                                END
+
+!*********** Coclasses ***********
+!coclass SystemConsole                                                                                       
+IID_SystemConsole               GROUP
+data1                             LONG(3D33C2A1H)
+data2                             SHORT(9CC3H)
+data3                             SHORT(4CDAH)
+data4                             STRING('<0BBH><73H><0EBH><0C4H><7EH><49H><0DCH><0D7H>')
+                                END
